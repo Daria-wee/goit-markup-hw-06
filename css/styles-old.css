@@ -185,9 +185,6 @@
     position: absolute;
 }
 
-.information-container{
-}
-
 .information-list {
     display: flex;
     gap: 24px;
@@ -197,9 +194,6 @@
 .information-item {
     display: block;
     width: calc((100% - 72px) / 4);
-}
-
-.information-item:first-child {
 }
 
 .information-item-title {
@@ -219,9 +213,6 @@
 }
 
 /*------------ team -----------------*/
-
-.team-conteiner {
-}
 
 .team {
     background-color: #f4f4fd;
@@ -263,9 +254,6 @@
 
 .team-item:last-child {
     margin-right: 0;
-}
-
-.team-item-image {
 }
 
 .team-item-title {
