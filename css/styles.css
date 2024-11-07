@@ -532,8 +532,8 @@ button {
     align-items: center;
     gap: 24px;
 flex-direction: row;
-
 }
+
 .team-item {
     display: block;
     background-color: #FFFFFF;
@@ -633,9 +633,6 @@ display: none;
     flex-direction: column;
     row-gap: 48px;
 }
-.portfolio-item:hover {
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-}
 
 .portfolio-item:hover .cover-description,
 .portfolio-item:focus .cover-description {
@@ -656,16 +653,40 @@ display: none;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+}
+
+
+@media screen and (min-width: 768px) {
+
+.portfolio-list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 24px;
+        flex-direction: row;
+    }
+.portfolio-item {
+    display: block;
+    background-color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 4px 4px;
+    margin: auto;
+    flex-basis: calc((100% - 24px) / 2);
+    margin-bottom: 47px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+.portfolio-item:nth-child(5) {
+    margin-bottom: 0;
+}
+
+.portfolio-item:last-child {
+    margin-bottom: 0;
+}
 
 }
 
-.cover-description:hover {
-    transform: translateY(0%)
-}
-
-/* @media screen and (min-width: 768px) {}
-
-@media screen and (min-width: 1158px) {} */
+@media screen and (min-width: 1158px) {}
 /* ---------------FOOTER-------------- */
 
 .container .footer {
