@@ -983,9 +983,6 @@ input::placeholder {
         margin-right: 120px;
     }
 
-    .footer-text {
-    }
-
     .footer-list-social {
         padding-top: 0;
     }
@@ -1030,10 +1027,14 @@ input::placeholder {
 
 }
 
+
 /* @media screen and (min-width: 768px) {}
 
 @media screen and (min-width: 1158px) {} */
 /* ------------MOBILE MENU------------ */
+
+
+/* modal-menu */
 
 .mobile-menu {
     position: fixed;
@@ -1045,7 +1046,6 @@ input::placeholder {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1064,14 +1064,110 @@ input::placeholder {
     height: 100%;
 }
 
-.mobile-menu-close{
+/* btn */
+
+.icon-menu-close {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-close:hover {
+    border-radius: 100%;
+    background-color: #404bbf;
+    border: none;
+    fill: #ffffff;
+}
+
+.mobile-menu-close:focus {
+    border-radius: 100%;
+    background-color: #404bbf;
+    border: none;
+    fill: #ffffff;
+}
+
+.mobile-menu-close {
     position: absolute;
     top: 24px;
     right: 24px;
+    border-radius: 50%;
+    justify-content: center;
+    display: flex;
+    stroke-width: 1px;
+    stroke: rgba(0, 0, 0, 0.1);
+    width: 24px;
+    height: 24px;
+    align-items: center;
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-bottom: 24px;
 }
+
+/* item */
 
 .mobile-menu-nav {
     margin-bottom: auto;
+}
+
+.mobile-menu-list {
+}
+.mobile-menu-link {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 111%;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+
+.mobil-menu-link:hover,
+.mobil-menu-link:focus,
+.mobil-contacts-link:hover,
+.mobil-contacts-link:focus {
+    color: #404bbf;
+}
+
+.mobile-menu-item {
+    margin-bottom: 40px;
+}
+.mobile-menu-item:last-child {
+    margin-bottom: 0;
+}
+.menu-studio {
+    color: #404bbf;
+}
+
+/* address */
+
+.mobil-contacts {
+    font-style: normal;
+}
+
+.mobil-contacts-link {
+    display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+.mobil-nomber {
+    color: #4d5ae5;
+    margin-bottom: 24px;
+}
+/* sosial */
+
+.mobil-social {
+    padding-top: 48px;
+    padding-bottom: 40px;
+    margin: 0;
+}
+
+.mobil-list-social {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
