@@ -389,6 +389,9 @@ button {
 .information-item {
     width: calc((100% - 24px) / 2);
 }
+.information-item-title {
+    text-align: unset;
+}
 }
 
 @media screen and (min-width: 1158px) {
